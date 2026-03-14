@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBTOK - 1C</title>
+
+    <!-- tem que ter a barra antes do css -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="img/LOGO-SQUARE-WEBTOK.png">
+</head>
+
+<body>
+
+     <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--corprimario); padding: 15px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/index.html">
+                <img src="/img/LOGO WEBTOK PNG.png" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <a class="btn btn-outline-light" href="/index.html" id="linkNavbar">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/comunicacao-direta.html" id="linkNavbar">Comunicação
+                            Direta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/sobre.html" id="linkNavbar">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/login-professor.html" id="linkNavbar">Logar como
+                            Professor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- bloco de bem vindo -->
+    <div class="saudacoes">
+        <h1>Comunicação Direta - 1ºE</h1>
+        <p>Verifique os avisos destinados somente à turma do 1°E (Eletromecânica)</p>
+    </div>
+
+    <!-- carrossel de avisos para o 1c -->
+    <main class="container mt-3">
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- tem que ter a '/' -->
+                    <img src="/img/SALAS-SEPARADAS-COMUN-DIRETA/1e/1.png" class="d-block w-100" alt="SEMANA CULTURAL">
+                </div>
+                <div class="carousel-item">
+                    <!-- tem que ter a '/' -->
+                    <img src="/img/SALAS-SEPARADAS-COMUN-DIRETA/1e/2.png" class="d-block w-100" alt="PORTAS ABERTAS">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+
+       <!-- footer -->
+    <footer class="text-white" style="background-color:var(--corprimario);">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-start mb-md-0" style="text-align: center; margin-bottom: 30px;"
+                    id="footerLinks">
+                    <a class="navbar-brand fw-bold text-white" href="/index.html">WEBTOK</a>
+                    <p class="mb-0 small">Conectando professores e alunos com facilidade.</p>
+
+                    <!-- espacamento -->
+                    <div class="espaco" style="height: 13px;"></div>
+
+                    <a href="https://etecguaratingueta.com.br/">etecguaratingueta.com.br</a>
+                    <br>
+                    <a
+                        href="http://projetointegrador2025.hubsapiens.com.br/">projetointegrador2025.hubsapiens.com.br</a>
+                </div>
+
+                <div class="col-md-4 mb-md-0" style="margin-bottom: 30px;">
+                    <h6 class="fw-semibold">Navegação</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="/index.html" class="text-white text-decoration-none">* Home</a></li>
+                        <li><a href="/sobre.html" class="text-white text-decoration-none">* Sobre</a></li>
+                        <li><a href="/login-professor.html" class="text-white text-decoration-none">* Login
+                                Professor</a>
+                        <li><a href="/termos.html" class="text-white text-decoration-none">* Termos de Uso</a></li>
+                        <li><a href="/politicas.html" class="text-white text-decoration-none">* Políticas de
+                                Privacidade</a></li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-md-end" style="text-align: center;">
+                    <h6 class="fw-semibold">Contato</h6>
+                    <p>webtok2025@etec.p.gov.br<br> Telefone: (12) 1234-5678</p>
+                    <img src="/img/engrenagem.svg" id="iconEngrenagem">
+                    <a href="/politicas.html" class="text-white text-decoration-none">Painel Administrativo</a></li>
+                
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <p>© 2025 WebTok. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- link do script.js -->
+    <script src="script.js"></script>
+
+</body>
+
+<!-- link do js do framework  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+</html>

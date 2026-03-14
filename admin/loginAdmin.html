@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBTOK - LOGIN</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="icon" href="/img/LOGO-SQUARE-WEBTOK.png">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--corprimario); padding: 15px;">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/index.html">
+                <img src="/img/LOGO WEBTOK PNG.png" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto gap-2">
+                    <a class="btn btn-outline-light" href="/index.html" id="linkNavbar">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/comunicacao-direta.html" id="linkNavbar">Comunicação
+                            Direta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/sobre.html" id="linkNavbar">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="/login-professor.html" id="linkNavbar">Logar como
+                            Professor</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- espacamento -->
+    <div class="espaco" style="height: 8vh;"></div>
+
+    <div class="saudacoes">
+        <h1>Logar como Administrador</h1>
+        <p>Entre com sua conta para acessar o painel de administração.</p>
+    </div>
+
+    <!-- espacamento -->
+    <div class="espaco" style="height: 15px;"></div>
+
+    <!-- login professor -->
+    <main id="login-Professor">
+        <h1 style="font-size:1.25rem; margin-bottom:15px; text-align:center; font-weight: bold">Insira suas informações:
+        </h1>
+
+        <form id="formularioDeLogin">
+            <input type="text" placeholder="Email" id="login">
+            <input type="password" placeholder="Senha" id="senha">
+            <input type="submit" value="Entrar" onclick="logar(); return false" id="botao-entrar">
+        </form>
+    </main>
+
+    <!-- espacamento -->
+    <div class="espaco" style="height: 26vh;"></div>
+    <!-- "vh" é uma unidade relativa à altura da janela de visualização. 1vh equivale a 1% da altura da tela. -->
+
+      <!-- footer -->
+    <footer class="text-white" style="background-color:var(--corprimario);">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-start mb-md-0" style="text-align: center; margin-bottom: 30px;"
+                    id="footerLinks">
+                    <a class="navbar-brand fw-bold text-white" href="/index.html">WEBTOK</a>
+                    <p class="mb-0 small">Conectando professores e alunos com facilidade.</p>
+
+                    <!-- espacamento -->
+                    <div class="espaco" style="height: 13px;"></div>
+
+                    <a href="https://etecguaratingueta.com.br/">etecguaratingueta.com.br</a>
+                    <br>
+                    <a
+                        href="http://projetointegrador2025.hubsapiens.com.br/">projetointegrador2025.hubsapiens.com.br</a>
+                </div>
+
+                <div class="col-md-4 mb-md-0" style="margin-bottom: 30px;">
+                    <h6 class="fw-semibold">Navegação</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="/index.html" class="text-white text-decoration-none">* Home</a></li>
+                        <li><a href="/sobre.html" class="text-white text-decoration-none">* Sobre</a></li>
+                        <li><a href="/login-professor.html" class="text-white text-decoration-none">* Login
+                                Professor</a>
+                        <li><a href="/termos.html" class="text-white text-decoration-none">* Termos de Uso</a></li>
+                        <li><a href="/politicas.html" class="text-white text-decoration-none">* Políticas de
+                                Privacidade</a></li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-md-end" style="text-align: center;">
+                    <h6 class="fw-semibold">Contato</h6>
+                    <p>webtok2025@etec.sp.gov.br<br> Telefone: (12) 1234-5678</p>
+                    <img src="/img/engrenagem.svg" id="iconEngrenagem">
+                    <a href="/admin/loginAdmin.html" class="text-white text-decoration-none">Painel Administrativo</a></li>
+                
+                </div>
+            </div>
+
+            <div style="margin-top: 30px; text-align: center;">
+                <p>© 2025 WebTok. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+<!-- link do js do framework  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+<!-- link do script.js -->
+<script src="/scriptAdm.js"></script>
+
+</html>

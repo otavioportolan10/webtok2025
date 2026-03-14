@@ -1,0 +1,449 @@
+/* ================================= GERAL ================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+:root {
+  /* --corprimario: #1e9080; */
+  --corprimario: #2342a0;
+  /* Essa cor de azul passa Confiança e credibilidade; Boa legibilidade; Versatilidade; Modernidade; etc */
+  --corsecundaria: #ffde59;
+  --coresteregg: #9d0000;
+}
+
+body {
+  /* background: linear-gradient(#ffffff, #e0f4ff); */
+  background: linear-gradient(#e0e4ed, #e0e4ed);
+  box-sizing: border-box;
+}
+
+#blocoDeTexto {
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  height: auto;
+  box-shadow: 5px 5px 5px var(--corprimario);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card {
+  box-shadow: 3px 3px 3px var(--corprimario);
+}
+
+/* ================================= NAVBAR ================================= */
+
+#linkNavbar {
+  border-radius: 15px;
+}
+
+.nav-item a{
+  color: white;
+}
+
+.nav-item a:hover{
+background-color: white;
+}
+
+
+/* ================================= BANNER DO HOME  ================================= */
+
+.banner {
+  width: 100%;
+  height: 300px;
+  background-color: #62b1b4;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.quadradoDeLinks {
+  background-color: #62b1b4;
+  position: absolute;
+  top: 50%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.quadradoDeLinks a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.quadradoDeLinks h3 {
+  color: white;
+  font-size: 27px;
+}
+
+/* ================================= SAUDAÇÕES/BEM VINDO ================================= */
+
+.saudacoes {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.saudacoes h1 {
+  font-size: 3rem;
+  color: var(--corprimario);
+  margin: 0;
+  font-weight: 700;
+}
+
+.saudacoes p {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ================================= GRID DA COMUNICAÇÃO DIRETA ================================= */
+
+.gradeTurmas {
+  display: grid;
+  gap: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: BLACK;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  border: 1px solid #c0d9d6;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.grid-Topo {
+  grid-row: 1;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 8px 3px;
+  /* espaçamento interno reduzido */
+  color: var(--corprimario);
+  background-color: #dde2f1;
+  /* fundo claro do cabeçalho */
+  border-bottom: 2px solid var(--corprimario);
+  display: flex;
+  /* serve para alinhar o texto verticalmente */
+  align-items: center;
+  /* centraliza verticalmente */
+  justify-content: center;
+  /* centraliza horizontalmente */
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 3px;
+  /* espaçamento interno reduzido */
+  font-size: 0.9em;
+  /* tamanho da fonte */
+  border-right: 1px solid #e0e8e7;
+  /* borda mais suave */
+}
+
+/* ================================= PÁGINA HOME ================================= */
+
+#cardzinhoInicio {
+  border-radius: 30px;
+}
+
+/* ================================= CARROSSEL DA PÁGINA HOME ================================= */
+
+/* CUSTOMIZAÇÃO DAS SETAS DO CARROSSEL */
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--corprimario);
+  border-radius: 10px;
+}
+
+/* ================================= PÁGINA DE LOGIN DO PROFESSOR ================================= */
+
+#login-Professor {
+  width: 300px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 5px var(--corprimario);
+}
+
+#login-Professor h1 {
+  margin-bottom: 15px;
+  background-color: var(--corprimario);
+  padding: 7px;
+  color: white;
+  border-radius: 7px;
+}
+
+#formularioDeLogin input {
+  border-radius: 7px;
+}
+
+#login {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 30px;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #9b9b9b1a;
+}
+
+#senha {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 30px;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #9b9b9b1a;
+}
+
+#botao-entrar {
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#formularioDeLogin h3 {
+  margin-bottom: 15px;
+  background-color: var(--corprimario);
+  padding: 7px;
+  color: white;
+  border-radius: 7px;
+}
+
+/* ================================= PAINEL DO PROFESSOR ================================= */
+
+#painelProfessor {
+  background-color: #3abdab0f;
+  /* height: 500px;
+    width: 90%; */
+  border-radius: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+/* #painelProfessor input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    margin: 15px;
+    height: 30px;
+    width: 100px;
+} */
+
+#avisoEnviadoProfessor {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px var(--corprimario);
+}
+
+#botaoAvisoProfessor {
+  margin-top: 10px;
+  width: 150px;
+  background-color: var(--corprimario);
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#cards-avisos-enviados {
+  width: 90%;
+  height: 100%;
+  margin-bottom: 90px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#ParteEnviarAvisoProfessor {
+  margin-bottom: 40px;
+}
+
+#botaoEnviarAvisoProfessor {
+  background-color: var(--corprimario);
+  border: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.176);
+}
+
+/* BLOCO DE CRIAÇÃO DE AVISO */
+
+#formAvisoCriacao {
+  box-shadow: 5px 5px 5px var(--corprimario);
+}
+
+/* COLUNAS DO PAINEL DO PROFESSOR */
+
+.h {
+  min-height: 400px;
+}
+
+.b1,
+.b2 {
+  background-color: transparent;
+}
+
+/* ================================= PAGINA DE ESTER EGG ================================= */
+
+.saudacoes-esteregg {
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#bodyEsterEgg {
+  background: white;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+}
+
+#passarIconeCarrossel-esteregg,
+#passarIconeCarrossel-esteregg-2 {
+  background-color: var(--coresteregg);
+  border-radius: 10px;
+}
+
+/* ================================= SOBRE ================================= */
+
+#cardIntegrante {
+  box-shadow: 2px 2px 3px var(--corprimario);
+}
+
+/* ================================= CÓDIGO QUE ESCONDE A BARRA DE ROLAGEM ================================= */
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* ================================= FOOTER ================================= */
+
+.footer,
+.footer a,
+.footer p,
+#footerLinks a {
+  text-decoration: none;
+  color: white;
+}
+
+#iconEngrenagem {
+  width: 20;
+  height: 20px;
+}
+
+/* ================================= ADMIN - PAINEL PRINCIPAL ================================= */
+
+#painelAdmPadrao {
+  background-color: #3abdab0f;
+  height: 400px;
+  width: 20%;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  text-align: center;
+  align-items: center;
+}
+
+#painelAdmPadrao2 {
+  margin: 0 auto;
+  /* background-color: #9d0000; */
+  width: 95%;
+  height: 95%;
+}
+
+#BotoesAdmin {
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+#BotoesAdmin a {
+  margin: 0 auto;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 15px;
+}
+
+#botaoCadastroAdmin {
+  background-color: var(--corprimario);
+  border: #000000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.176);
+}
+
+/* ================================= ADMIN - CADASTRO DE USUARIO ================================= */
+
+#formCadastroUsuario {
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 5px var(--corprimario);
+}
+
+#botaoCadastrarUser {
+  background-color: var(--corprimario);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* ================================= ADMIN - CADASTRO DE CARGO ================================= */
+
+#formCadastroCargo {
+  background-color: #f5f5f5;
+  box-shadow: 5px 5px 5px var(--corprimario);
+}
+
+#botaoCadastrarCargo {
+  background-color: var(--corprimario);
+  color: #ffffff;
+  font-weight: 600;
+}
